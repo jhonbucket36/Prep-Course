@@ -5,12 +5,23 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+
+  if(x > y){
+    return x;
+  }else if(x < y){
+    return y;
+  }else{
+    return x || y;
+  }
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+
+  return edad >= 18 ? "Allowed" : "Not allowed"
+
 }
   
 function conection(status) {
@@ -19,6 +30,9 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+
+ return status === 1 ? "Online" : status === 2 ? "Away" : "Offline"
+
 }
 
 function saludo(idioma) {
@@ -76,6 +90,10 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  
+    
+
+
 }
 
 function esPrimo(numero) {
@@ -84,6 +102,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+
 }
 
 function esVerdadero(valor){
@@ -109,7 +128,10 @@ function tieneTresDigitos(numero){
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
-  //Usar el bucle do ... while.
+  //Usar el bucle do ... while
+
+    
+
 }
 
 
