@@ -42,6 +42,7 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  return idioma === "aleman"? "Guten Tag!" : idioma === "mandarin"? "Ni Hao!" : idioma === "ingles"? "Hello!" : "Hola!"
 }
 
 function colors(color) {
@@ -52,12 +53,36 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+
+  switch(color){
+    case "blue" :
+      return "This is blue"
+      break
+
+    case "red" :
+      return "This is red"
+      break
+      
+    case "green" :
+      return "This is green"
+      break
+      
+    case "orange" :
+      return "This is orange"
+
+    default :
+      return "Color not found"
+      break
+  }
+
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  return numero === 10 || numero === 5 ? true : false
 }
 
 function estaEnRango(numero) {
