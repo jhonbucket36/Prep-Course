@@ -104,10 +104,11 @@ function numeroMasGrande(numeros) {
   //return Math.max(...numeros);
 }
 
-function multiplicarArgumentos() {
+function multiplicarArgumentos(arguments) {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+<<<<<<< HEAD
 
   if (arguments.length < 1) {
     return 0;
@@ -117,6 +118,9 @@ function multiplicarArgumentos() {
     total = total * arguments[i];
   }
   return total;
+=======
+  return arguments.reduce((acc,val) => acc * val)
+>>>>>>> origin/main
 }
 
 function cuentoElementos(arreglo) {
