@@ -104,11 +104,10 @@ function numeroMasGrande(numeros) {
   //return Math.max(...numeros);
 }
 
-function multiplicarArgumentos(arguments) {
+function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-<<<<<<< HEAD
 
   if (arguments.length < 1) {
     return 0;
@@ -118,9 +117,6 @@ function multiplicarArgumentos(arguments) {
     total = total * arguments[i];
   }
   return total;
-=======
-  return arguments.reduce((acc,val) => acc * val)
->>>>>>> origin/main
 }
 
 function cuentoElementos(arreglo) {
@@ -225,19 +221,21 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
 
-  let suma = numero
   let arr = []
+  let suma = numero
   
-  for(let i = 0 ; i <10 ; i++){
-    suma = suma + 2
+  for(let i = 0 ; i < 10 ; i++){
+    suma+=2
     if(suma === i){
       return "Se interrumpió la ejecución"
-    }else{
+      
+    } else{
       arr.push(suma)
     }
-   
   }
-    return arr
+  return arr
+
+  
 }
 
 function continueStatement(numero) {
@@ -247,7 +245,19 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  fdkk
+
+  let arr = []
+  let suma = numero
+
+  for(let i = 0 ; i < 10 ; i++){
+    if(i === 5){
+      continue
+    }
+    suma+=2
+    arr.push(suma)
+  }
+  return arr
+  
 }
 
 // No modificar nada debajo de esta línea
